@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Supermercado One', sans-serif;
+    box-sizing: border-box;
+    border: none;
+}
+
+body{
+    background-image: linear-gradient(to right, #B4BEC9, #DEEFE7);
+    transition: 0.5s;
+}
+
+#modo_noturno{
+    display: flex;
+    justify-content: end;
+    margin: 30px 30px 0px 0px;
+}
+
+.trilho{
+    width: 48px;
+    height: 25px;
+    background-color: #7c7c7c;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.indicador{
+    width: 25px;
+    height: 25px;
+    background-color: #000000;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+}
+
+.trilho.dark{
+    background-color: #c3c3c3;
+}
+
+.trilho.dark .indicador{
+    left: 23px;
+    background-color: #fff;
+}
+
+body.dark{
+    background-image: linear-gradient(to right, #404040, #8C8C8C);
+    transition: 0.9s;
+}
+
+body.dark #container{
+    background-image: linear-gradient(to right, #404040, #8C8C8C);
+    box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.5);
+    transition: 0.9s;
+}  
+
+body.dark .relogio{
+    background-color: #5f5f61;
+    box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.5);
+    transition: 0.9s;
+    color: #e4e2e2;
+    transition: 0.9s;
+}
+
+
+
+
+
+
+#body_do_relogio{
+    width: 98vw;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container{
+    display: flex;
+    background-image: linear-gradient(to right, #B4BEC9, #DEEFE7);
+    box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.219);
+    padding: 18px;
+}
+
+.relogio{
+    margin: 20px;
+    width: 170px;
+    height: 240px;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #33c3c598;
+    box-shadow: 8px 8px 16px -4px rgba(0, 0, 0, 0.349);
+    font-size: 8em;
+    color: #fff;
+}
